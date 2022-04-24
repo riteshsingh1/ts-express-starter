@@ -1,6 +1,6 @@
 {
   "name": "ts-express-starter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Typescript Starter",
   "directories": {
     "lib": "lib"
