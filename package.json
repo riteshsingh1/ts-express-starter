@@ -1,0 +1,29 @@
+{
+  "name": "ts-starter",
+  "version": "1.0.0",
+  "description": "Typescript Starter",
+  "directories": {
+    "lib": "lib"
+  },
+  "main": "bin/cli.js",
+  "bin": {
+    "typescript-express-starter": "bin/cli.js"
+  },
+  "scripts": {
+    "start": "node bin/cli.js"
+  },
+  "author": "Ritesh Singh",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "edit-json-file": "^1.5.0",
+    "gitignore": "^0.6.0",
+    "inquirer": "^6.5.2",
+    "ncp": "^2.0.0",
+    "ora": "^4.0.3"
+  },
+  "engines": {
+    "node": ">= 10.13.0",
+    "npm": ">= 6.11.0"
+  }
+}
