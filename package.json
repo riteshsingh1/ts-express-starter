@@ -25,5 +25,10 @@
   "engines": {
     "node": ">= 10.13.0",
     "npm": ">= 6.11.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riteshsingh1/ts-express-starter.git"
+  },
+  "homepage": "https://github.com/riteshsingh1/ts-express-starter#readme"
 }
