@@ -4,20 +4,18 @@ import { connect } from 'mongoose';
 import 'dotenv/config';
 import router from './routes';
 import { dbConfig } from './config/database';
-import { ALLOWED_HOSTS, PORT } from './config/app';
+import { PORT } from './config/app';
 import logger from './utils/logger';
-import { LogActivity } from './utils/logActivity';
 import { Job } from './config/cron';
 const application = express();
 
 application.use(express.json());
-
 const corsConfig = {
-  origin: ALLOWED_HOSTS?.split('|'),
+  origin: '*',
   methods: '*',
 };
 application.use(cors(corsConfig));
-application.all('*', LogActivity);
+// application.all('*', LogActivity);
 
 application.use('/', router);
 

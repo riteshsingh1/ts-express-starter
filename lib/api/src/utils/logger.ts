@@ -15,9 +15,7 @@ const transport: DailyRotateFile = new DailyRotateFile({
 let logger = winston.createLogger({
   transports: [
     transport,
-    new Console({
-      format: winston.format.json(),
-    }),
+    new Console(),
     new Loggly({
       token: '50dccb28-a5ce-44f5-9f42-84d8a20e95d9',
       subdomain: 'brightdigigold',

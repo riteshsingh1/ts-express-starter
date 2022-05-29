@@ -5,6 +5,8 @@ export const TranslateCode: any = {
     MOBILE_ALREADY_EXISTS: 'This mobile number already exists.',
     EMAIL_DOES_NOT_EXISTS: 'This email id does not exists.',
     MOBILE_DOES_NOT_EXISTS: 'You Must Signup Before Signin.',
+    INVALID_MOBILE_NUMBER: 'Invalid mobile number.',
+    INVALID_EMAIL_ID: 'Please enter a valid email address',
     OTP_EXPIRED: 'This otp has been expired.',
     OTP_DOES_NOT_MATCH: 'The otp does not match.',
     INVALID_EMAIL_PASSWORD: 'Invalid email or password',
@@ -27,5 +29,11 @@ export const TranslateCode: any = {
     REAL_TIME_FETCH_SUCCESS: 'Fetch Realtime Gold Prices.',
     CURRENT_INVESMENT: 'Fetch Current Invesment.',
     PROFILE_FETCH_SUCCESS: 'Profile Fetched Successfully.',
+    OTP_RETRY_COUNT_REACHED: 'You have exhausted 3 otp attempts. Please try in an hour.',
+    UNAUTHORIZED_USER: 'Unauthorized User',
+    INVALID_TOKEN: 'Invalid Token',
+    TOKEN_EXPIRED_ERROR: 'Token is expired.',
+    OTP_TIMEOUT_REACHED:
+      "You have entered 3 incorrect OTP's. Due to security reasons,You are blocked for logging into your account for 1 hour.Please retry after 1 hour",
   },
 };

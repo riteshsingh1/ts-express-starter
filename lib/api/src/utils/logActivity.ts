@@ -1,27 +1,43 @@
 import { Request, Response, NextFunction } from 'express';
+import Joi from 'joi';
 import { SKIP_ACTIVITY } from '../config/app';
 import { ApiActivity } from '../models/ApiActivity';
+import { AuthRequest } from './authMiddleware';
 
-export const LogActivity = (request: Request, response: Response, next: NextFunction) => {
+export const LogActivity = (request: AuthRequest, response: Response, next: NextFunction) => {
   if (SKIP_ACTIVITY || request.method.toLowerCase() === 'get') {
     next();
   } else {
     try {
-      const remarks = 'API_STARTED' + Date.now() + '-' + Math.random() * 100000;
+      const { error } = Joi.object({
+        journeyId: Joi.string().required(),
+        lang: Joi.string().required(),
+      })
+        .unknown()
+        .validate(request.body);
+      if (error) {
+        const responseObject = {
+          code: 400,
+          message: 'Invalid Requst',
+          data: error.details,
+        };
+        return response.status(400).json(responseObject);
+      }
+      const remarks = Date.now() + '-' + Math.floor(Math.random() * 100000);
       ApiActivity.create({
-        userId: request.body.userId || 'GUEST',
+        userId: request.user || 'GUEST',
         apiName: request.body.apiName,
         apiEndPoint: request.originalUrl,
-        baseUrl: request.baseUrl,
+        baseUrl: request.path,
         headers: request.headers,
         request: request.body,
         response: {},
         journeyId: request.body.journeyId,
         remarks: remarks,
         code: '',
-        createdAt: Date(),
+        createdAt: Date.now(),
       });
-      request.body.remarks = remarks;
+      request.headers.remarks = remarks;
       next();
     } catch (err: any) {
       const responseObject = {

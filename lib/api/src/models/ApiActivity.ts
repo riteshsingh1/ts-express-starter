@@ -2,7 +2,6 @@ import { Schema, model } from 'mongoose';
 
 interface IApiActivity {
   userId?: string;
-  apiName: string;
   apiEndPoint: string;
   baseUrl?: string;
   headers: any;
@@ -10,15 +9,14 @@ interface IApiActivity {
   response: any;
   remarks: string;
   journeyId: string;
-  code: string;
+  code?: string;
   createdAt?: number;
 }
 
 const apiActivitySchema = new Schema<IApiActivity>({
   journeyId: { type: String, required: true },
   userId: { type: String, required: true, default: 'GUEST' },
-  apiName: { type: String, required: true },
-  code: { type: String, required: true },
+  code: { type: String, required: false },
   apiEndPoint: { type: String, required: true },
   baseUrl: { type: String, required: true },
   remarks: { type: String, required: true },
