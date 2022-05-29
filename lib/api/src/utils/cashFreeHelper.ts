@@ -1,18 +1,18 @@
-import axios from 'axios';
-import { CASHFREE_APP_ID, CASHFREE_ORDER_URL, CASHFREE_SECRET } from '../config/app';
-import logger from './logger';
+import axios from 'axios'
+import { CASHFREE_APP_ID, CASHFREE_ORDER_URL, CASHFREE_SECRET } from '../config/app'
+import logger from './logger'
 
 interface PaymentInitialization {
-  txnid: string;
-  amount: number;
-  firstname: string;
-  email: string;
-  phone: string;
-  productinfo: string;
-  furl: string;
-  surl: string;
-  hash?: string;
-  customerId: string;
+  txnid: string
+  amount: number
+  firstname: string
+  email: string
+  phone: string
+  productinfo: string
+  furl: string
+  surl: string
+  hash?: string
+  customerId: string
 }
 
 /**
@@ -32,8 +32,8 @@ interface PaymentInitialization {
 const preparePaymentDetails = async (
   reqData: PaymentInitialization
 ): Promise<{
-  isError: boolean;
-  data?: PaymentInitialization;
+  isError: boolean
+  data?: PaymentInitialization
 }> => {
   try {
     const { data } = await axios.post(
@@ -60,17 +60,17 @@ const preparePaymentDetails = async (
           'x-client-secret': CASHFREE_SECRET!,
         },
       }
-    );
-    return { isError: false, data };
+    )
+    return { isError: false, data }
   } catch (e: any) {
     logger.info({
       msg: 'sd',
       e,
-    });
-    return { isError: true };
+    })
+    return { isError: true }
   }
-};
+}
 
 export const cashFreeHelper = {
   preparePaymentDetails,
-};
+}

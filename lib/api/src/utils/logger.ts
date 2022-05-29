@@ -1,17 +1,17 @@
-import * as winston from 'winston';
-import DailyRotateFile from 'winston-daily-rotate-file';
-import * as path from 'path';
-import { Console } from 'winston/lib/winston/transports';
-const bsaeSir = path.join(__dirname, '../../logs/');
-import { Loggly } from 'winston-loggly-bulk';
-import { NODE_ENV } from '../config/app';
+import * as winston from 'winston'
+import DailyRotateFile from 'winston-daily-rotate-file'
+import * as path from 'path'
+import { Console } from 'winston/lib/winston/transports'
+const bsaeSir = path.join(__dirname, '../../logs/')
+import { Loggly } from 'winston-loggly-bulk'
+import { NODE_ENV } from '../config/app'
 const transport: DailyRotateFile = new DailyRotateFile({
   filename: bsaeSir + 'application-%DATE%.log',
   datePattern: 'YYYY-MM-DD',
   zippedArchive: true,
   maxSize: '20m',
   maxFiles: '14d',
-});
+})
 let logger = winston.createLogger({
   transports: [
     transport,
@@ -24,7 +24,7 @@ let logger = winston.createLogger({
     }),
   ],
   format: winston.format.combine(winston.format.json()),
-});
+})
 if (NODE_ENV === 'production') {
   logger = winston.createLogger({
     transports: [
@@ -40,8 +40,8 @@ if (NODE_ENV === 'production') {
       }),
     ],
     format: winston.format.combine(winston.format.json()),
-  });
+  })
 }
-logger.exitOnError = false;
+logger.exitOnError = false
 
-export default logger;
+export default logger

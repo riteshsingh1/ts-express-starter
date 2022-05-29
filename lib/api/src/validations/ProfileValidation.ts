@@ -1,4 +1,4 @@
-import Joi from 'joi';
+import Joi from 'joi'
 
 export const UpdateUserPersonalDetailValidationSchema = Joi.object({
   journeyId: Joi.string().required(),
@@ -7,20 +7,20 @@ export const UpdateUserPersonalDetailValidationSchema = Joi.object({
   dob: Joi.any().optional(),
   panNumber: Joi.any().optional(),
   lang: Joi.string().optional(),
-});
+})
 
 export const CheckPanValidationSchema = Joi.object({
   journeyId: Joi.string().required(),
   name: Joi.string().required(),
   panNumber: Joi.string().optional(),
   lang: Joi.string().optional(),
-});
+})
 
 export const validateUserEmailOrMobileValidationSchema = Joi.object({
   journeyId: Joi.string().required(),
   userdata: Joi.string().required(),
   lang: Joi.string().optional(),
-});
+})
 
 export const validateUserBankDetailsValidationSchema = Joi.object({
   journeyId: Joi.string().required(),
@@ -29,7 +29,7 @@ export const validateUserBankDetailsValidationSchema = Joi.object({
   ifsc: Joi.string().required(),
   accountNumber: Joi.string().required(),
   lang: Joi.string().optional(),
-});
+})
 
 export const validateUserAddressDetailsValidationSchema = Joi.object({
   journeyId: Joi.string().required(),
@@ -39,9 +39,9 @@ export const validateUserAddressDetailsValidationSchema = Joi.object({
   state: Joi.string().required(),
   city: Joi.string().required(),
   lang: Joi.string().optional(),
-});
+})
 export const validateUserPhotoValidationSchema = Joi.object({
   journeyId: Joi.string().required(),
   photo: Joi.string().required(),
   lang: Joi.string().optional(),
-});
+})

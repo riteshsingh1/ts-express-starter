@@ -1,39 +1,31 @@
-import { Router } from 'express';
-import { getStateAndCityBasedOnPincode, Login, RetryOTP, VerifyOTP } from '../controllers/auth/AuthController';
-import {
-  checkIfMobileOrEmailAlreadyExists,
-  checkPanFunction,
-  GetUserInfo,
-  metalBalanceFunction,
-  updateUserAddressDetailsFunction,
-  updateUserBankDetailsFunction,
-  updateUserPhotoFunction,
-  updateUserProfileFunction,
-  validateUserEmailOrMobileFunction,
-  VerifyOTPForProfileFunction,
-} from '../controllers/auth/ProfileController';
-import WelcomeToExpressApplication from '../controllers/WelcomeController';
-import { authMiddleware } from '../utils/authMiddleware';
-import { LogActivity } from '../utils/logActivity';
-const router = Router();
+import { Router } from 'express'
+import { authController } from '../controllers/auth/AuthController'
+import { profileController } from '../controllers/auth/ProfileController'
+import { welcomeController } from '../controllers/WelcomeController'
+import { authMiddleware } from '../utils/authMiddleware'
+import { LogActivity } from '../utils/logActivity'
+const router = Router()
 
 // auth routes
-router.get('', WelcomeToExpressApplication);
-router.post('/login', LogActivity, Login);
-router.post('/verify-otp', LogActivity, VerifyOTP);
-router.post('/retry-otp', LogActivity, RetryOTP);
-router.post('/validate-pincode', LogActivity, getStateAndCityBasedOnPincode);
+router.get('', welcomeController.WelcomeToExpressApplication)
+router.post('/login', LogActivity, authController.Login)
+router.post('/verify-otp', LogActivity, authController.VerifyOTP)
+router.post('/retry-otp', LogActivity, authController.RetryOTP)
+router.post('/validate-pincode', LogActivity, authController.getStateAndCityBasedOnPincode)
 // order routes
-router.post('/me', authMiddleware, LogActivity, GetUserInfo);
+router.post('/me', authMiddleware, LogActivity, profileController.GetUserInfo)
 // profile routes
-router.post('/update-user-profile', authMiddleware, LogActivity, updateUserProfileFunction);
-router.post('/check-pan', authMiddleware, LogActivity, checkPanFunction);
-router.post('/send-profile-otp', authMiddleware, LogActivity, validateUserEmailOrMobileFunction);
-router.post('/verify-profile-otp', authMiddleware, LogActivity, VerifyOTPForProfileFunction);
-router.post('/check-for-duplicate-email-mobile', authMiddleware, LogActivity, checkIfMobileOrEmailAlreadyExists);
-router.post('/update-user-address', authMiddleware, LogActivity, updateUserAddressDetailsFunction);
-router.post('/update-user-bank-details', authMiddleware, LogActivity, updateUserBankDetailsFunction);
-router.post('/update-user-photo', authMiddleware, LogActivity, updateUserPhotoFunction);
-router.post('/metal-balance', authMiddleware, LogActivity, metalBalanceFunction);
+router.post('/update-user-profile', authMiddleware, LogActivity, profileController.updateUserProfileFunction)
+router.post('/send-profile-otp', authMiddleware, LogActivity, profileController.validateUserEmailOrMobileFunction)
+router.post('/verify-profile-otp', authMiddleware, LogActivity, profileController.VerifyOTPForProfileFunction)
+router.post(
+  '/check-for-duplicate-email-mobile',
+  authMiddleware,
+  LogActivity,
+  profileController.checkIfMobileOrEmailAlreadyExists
+)
+router.post('/update-user-address', authMiddleware, LogActivity, profileController.updateUserAddressDetailsFunction)
+router.post('/update-user-bank-details', authMiddleware, LogActivity, profileController.updateUserBankDetailsFunction)
+router.post('/update-user-photo', authMiddleware, LogActivity, profileController.updateUserPhotoFunction)
 
-export default router;
+export default router

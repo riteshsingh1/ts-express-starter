@@ -1,16 +1,16 @@
-import { Schema, model } from 'mongoose';
+import { Schema, model } from 'mongoose'
 
 interface IApiActivity {
-  userId?: string;
-  apiEndPoint: string;
-  baseUrl?: string;
-  headers: any;
-  request: any;
-  response: any;
-  remarks: string;
-  journeyId: string;
-  code?: string;
-  createdAt?: number;
+  userId?: string
+  apiEndPoint: string
+  baseUrl?: string
+  headers: any
+  request: any
+  response: any
+  remarks: string
+  journeyId: string
+  code?: string
+  createdAt?: number
 }
 
 const apiActivitySchema = new Schema<IApiActivity>({
@@ -24,9 +24,9 @@ const apiActivitySchema = new Schema<IApiActivity>({
   response: { type: Object, required: false },
   headers: { type: Object, required: true },
   createdAt: { type: Number, required: false },
-});
+})
 
-const d = new Date();
-const collectionName = `apiActivity-${d.getMonth() + 1}${d.getFullYear()}`;
+const d = new Date()
+const collectionName = `apiActivity-${d.getMonth() + 1}${d.getFullYear()}`
 
-export const ApiActivity = model<IApiActivity>(collectionName, apiActivitySchema);
+export const ApiActivity = model<IApiActivity>(collectionName, apiActivitySchema)

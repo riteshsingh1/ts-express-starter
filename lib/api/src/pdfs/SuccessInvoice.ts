@@ -1,23 +1,23 @@
 interface SuccessInvoiceInterface {
   user: {
-    name: string | undefined | null;
-    email: string | undefined | null;
-    mobile: string | undefined | null;
-  };
+    name: string | undefined | null
+    email: string | undefined | null
+    mobile: string | undefined | null
+  }
   order: {
-    date: string | undefined | null;
-    customerId: string | undefined | null;
-    orderNumber: string | undefined | null;
-  };
+    date: string | undefined | null
+    customerId: string | undefined | null
+    orderNumber: string | undefined | null
+  }
   product: {
-    item: string | undefined | null;
-    grams: string | undefined | null;
-    pricePerGram: string | undefined | null;
-    totalPrice: string | undefined | null;
-    tax: number | undefined | null;
-    priceWithoutTax: number | undefined | null;
-    unitType: string | undefined | null;
-  };
+    item: string | undefined | null
+    grams: string | undefined | null
+    pricePerGram: string | undefined | null
+    totalPrice: string | undefined | null
+    tax: number | undefined | null
+    priceWithoutTax: number | undefined | null
+    unitType: string | undefined | null
+  }
 }
 export const SuccessInvoice = async (data: SuccessInvoiceInterface) => {
   return `<!DOCTYPE html>
@@ -310,5 +310,5 @@ export const SuccessInvoice = async (data: SuccessInvoiceInterface) => {
       </table>
     </body>
   </html>
-  `;
-};
+  `
+}

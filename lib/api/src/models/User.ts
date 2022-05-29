@@ -1,39 +1,39 @@
-import { Schema, model } from 'mongoose';
-import { maskAadhaarNumber, maskPanNumber } from '../utils/helper';
+import { Schema, model } from 'mongoose'
+import { maskAadhaarNumber, maskPanNumber } from '../utils/helper'
 interface IUser {
-  _id?: string;
-  name?: string;
-  email?: string;
-  mobile?: string;
-  photo?: string;
-  userId: string;
-  dob: string;
-  isAddressCompleted: boolean;
-  isKycDone: boolean;
-  isPanUploaded: boolean;
-  isEmailVerified?: boolean;
-  isMobileVerified?: boolean;
-  isBasicDetailsCompleted: boolean;
-  isBankDetailsCompleted?: boolean;
+  _id?: string
+  name?: string
+  email?: string
+  mobile?: string
+  photo?: string
+  userId: string
+  dob: string
+  isAddressCompleted: boolean
+  isKycDone: boolean
+  isPanUploaded: boolean
+  isEmailVerified?: boolean
+  isMobileVerified?: boolean
+  isBasicDetailsCompleted: boolean
+  isBankDetailsCompleted?: boolean
   address?: {
-    line1: string;
-    line2?: string;
-    pincode: number;
-    state: string;
-    city: string;
-  };
+    line1: string
+    line2?: string
+    pincode: number
+    state: string
+    city: string
+  }
   kyc?: {
-    panNumber: string;
-    aadhaarNumber?: string;
-  };
+    panNumber: string
+    aadhaarNumber?: string
+  }
   bankDetails?: {
-    bankName: string;
-    accountName: string;
-    ifsc: string;
-    accountNumber: string;
-  };
-  createdAt: number;
-  updatedAt: number;
+    bankName: string
+    accountName: string
+    ifsc: string
+    accountNumber: string
+  }
+  createdAt: number
+  updatedAt: number
 }
 
 const userSchema = new Schema<IUser>({
@@ -69,9 +69,9 @@ const userSchema = new Schema<IUser>({
   },
   createdAt: { type: Number, default: Date.now() },
   updatedAt: { type: Number, default: Date.now() },
-});
+})
 
-export const User = model<IUser>('User', userSchema);
+export const User = model<IUser>('User', userSchema)
 
 /**
  * Register User
@@ -82,7 +82,7 @@ export const User = model<IUser>('User', userSchema);
  * @returns User
  */
 export const RegisterUser = async (key: string, value: string, emailVerified: boolean, mobileVerified: boolean) => {
-  const userId = `USER${Math.floor(Math.random() * 1000000000)}`;
+  const userId = `USER${Math.floor(Math.random() * 1000000000)}`
   return User.create({
     [key]: value,
     userId: userId,
@@ -111,8 +111,8 @@ export const RegisterUser = async (key: string, value: string, emailVerified: bo
       ifsc: ' ',
       accountNumber: ' ',
     },
-  });
-};
+  })
+}
 
 /**
  * Get User Information
@@ -121,13 +121,13 @@ export const RegisterUser = async (key: string, value: string, emailVerified: bo
  * @returns User
  */
 export const getUserInformation = async (key: string | number, value: string | number) => {
-  const user = await User.findOne({ [key]: value });
+  const user = await User.findOne({ [key]: value })
   if (user && user.isKycDone && user.kyc) {
-    user.kyc.panNumber = maskPanNumber(user.kyc.panNumber);
-    user.kyc.aadhaarNumber = maskAadhaarNumber(user.kyc.aadhaarNumber!);
+    user.kyc.panNumber = maskPanNumber(user.kyc.panNumber)
+    user.kyc.aadhaarNumber = maskAadhaarNumber(user.kyc.aadhaarNumber!)
   }
-  return user;
-};
+  return user
+}
 
 export const updateUserProfile = async (
   userId: string,
@@ -145,7 +145,7 @@ export const updateUserProfile = async (
     $set: {
       'kyc.panNumber': panNumber,
     },
-  };
+  }
   if (panNumber) {
     insertObj = {
       name: name,
@@ -156,12 +156,12 @@ export const updateUserProfile = async (
       $set: {
         'kyc.panNumber': panNumber,
       },
-    };
+    }
   }
   return await User.findOneAndUpdate({ userId: userId }, insertObj, {
     new: true,
-  });
-};
+  })
+}
 
 export const updateUserPhoto = async (userId: string, userPhoto: string) => {
   return await User.findOneAndUpdate(
@@ -172,8 +172,8 @@ export const updateUserPhoto = async (userId: string, userPhoto: string) => {
     {
       new: true,
     }
-  );
-};
+  )
+}
 
 /**
  * Update the bank details
@@ -199,11 +199,11 @@ export const updateUserBankDetails = async (
       'bankDetails.accountNumber': accountNumber,
       'bankDetails.ifsc': ifsc,
     },
-  };
+  }
   return await User.findOneAndUpdate({ userId: userId }, insertObj, {
     new: true,
-  });
-};
+  })
+}
 
 /**
  * Update user address information details
@@ -232,11 +232,11 @@ export const updateUserAddress = async (
       'address.state': state,
       'address.city': city,
     },
-  };
+  }
   return await User.findOneAndUpdate({ userId: userId }, insertObj, {
     new: true,
-  });
-};
+  })
+}
 /**
  * Get User Information
  * @param key string | number
@@ -244,8 +244,8 @@ export const updateUserAddress = async (
  * @returns User
  */
 export const checkIfMobileOrEmailAlreadyExistsModel = async (key: string | number, value: string | number) => {
-  return await User.findOne({ [key]: value });
-};
+  return await User.findOne({ [key]: value })
+}
 
 /**
  * Update User email information
@@ -254,8 +254,8 @@ export const checkIfMobileOrEmailAlreadyExistsModel = async (key: string | numbe
  * @returns User object
  */
 export const updateUserEmail = async (userId: string, email: string) => {
-  return await User.findOneAndUpdate({ userId: userId }, { email: email });
-};
+  return await User.findOneAndUpdate({ userId: userId }, { email: email })
+}
 
 /**
  * Update User mobile information
@@ -264,5 +264,5 @@ export const updateUserEmail = async (userId: string, email: string) => {
  * @returns User object
  */
 export const updateUserMobile = async (userId: string, mobile: string) => {
-  return await User.findOneAndUpdate({ userId: userId }, { mobile: mobile });
-};
+  return await User.findOneAndUpdate({ userId: userId }, { mobile: mobile })
+}

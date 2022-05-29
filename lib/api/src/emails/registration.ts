@@ -1,4 +1,4 @@
-import { FROM_EMAIL_VERIFY, mailgunClient, MAILGUN_DOMAIN } from '../config/email';
+import { FROM_EMAIL_VERIFY, mailgunClient, MAILGUN_DOMAIN } from '../config/email'
 
 const RegisterEmail = async (to: string, otp: string | number) => {
   const data = {
@@ -1435,8 +1435,8 @@ const RegisterEmail = async (to: string, otp: string | number) => {
     </html>
     
     `,
-  };
-  await mailgunClient.messages.create(MAILGUN_DOMAIN!, data);
-};
+  }
+  await mailgunClient.messages.create(MAILGUN_DOMAIN!, data)
+}
 
-export default RegisterEmail;
+export default RegisterEmail

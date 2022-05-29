@@ -72,7 +72,7 @@ export const ErrorCodes = {
     MESSAGE:
       "You have entered 3 incorrect OTP's. Due to security reasons,You are blocked for logging into your account for 1 hour.Please retry after 1 hour.",
   },
-};
+}
 
 export const ApplicationCodes = {
   EMAIL_VERIFICATION_SUBJECT: 'Please Verify Yout Email',
@@ -88,4 +88,4 @@ export const ApplicationCodes = {
   PROFILE_SETUP_SUCCESSFULLY: 'Your Profile has been setup successfully.',
   INVALID_DATA: 'Invalid Data',
   PROFILE_FETCH_SUCCESS: 'Profile Fetched Successfully.',
-};
+}

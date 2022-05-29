@@ -36,4 +36,4 @@ export const TranslateCode: any = {
     OTP_TIMEOUT_REACHED:
       "You have entered 3 incorrect OTP's. Due to security reasons,You are blocked for logging into your account for 1 hour.Please retry after 1 hour",
   },
-};
+}

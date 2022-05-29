@@ -1,4 +1,4 @@
-import { FROM_EMAIL_VERIFY, mailgunClient, MAILGUN_DOMAIN } from '../config/email';
+import { FROM_EMAIL_VERIFY, mailgunClient, MAILGUN_DOMAIN } from '../config/email'
 
 const WelcomeEmail = async (to: string) => {
   const data = {
@@ -2029,8 +2029,8 @@ const WelcomeEmail = async (to: string) => {
     
     
     `,
-  };
-  await mailgunClient.messages.create(MAILGUN_DOMAIN!, data);
-};
+  }
+  await mailgunClient.messages.create(MAILGUN_DOMAIN!, data)
+}
 
-export default WelcomeEmail;
+export default WelcomeEmail
