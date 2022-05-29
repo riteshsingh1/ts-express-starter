@@ -1,7 +1,7 @@
 {
-  "name": "micro-user",
+  "name": "ts-starter",
   "version": "1.0.0",
-  "description": "Microservice for customer panel",
+  "description": "Express Typescript MongoDB starter",
   "main": "index.js",
   "scripts": {
     "start": "node build/app.js",
@@ -13,18 +13,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brightdigigold/micro-user.git"
+    "url": "git+https://github.com/riteshsingh1/ts-express-starter.git"
   },
   "keywords": [
-    "Micro",
-    "user"
+    "Typescript",
+    "express",
+    "starter",
+    "ts"
   ],
   "author": "Ritesh Singh",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/brightdigigold/micro-user/issues"
+    "url": "https://github.com/riteshsingh1/ts-express-starter/issues"
   },
-  "homepage": "https://github.com/brightdigigold/micro-user#readme",
+  "homepage": "https://github.com/riteshsingh1/ts-express-starter#readme",
   "dependencies": {
     "axios": "^0.26.1",
     "cors": "^2.8.5",
