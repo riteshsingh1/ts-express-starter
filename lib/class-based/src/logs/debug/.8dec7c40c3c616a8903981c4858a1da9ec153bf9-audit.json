@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/logs/debug/.8dec7c40c3c616a8903981c4858a1da9ec153bf9-audit.json",
+    "files": [
+        {
+            "date": 1653873704042,
+            "name": "/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/logs/debug/2022-05-30.log",
+            "hash": "c36ef9b6fd6f81ad85c7ae3431ae337c"
+        }
+    ],
+    "hashType": "md5"
+}

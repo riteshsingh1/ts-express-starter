@@ -7,7 +7,7 @@
 For installation run the following command in your terminal
 
 ```bash
-npx ts-express-starter
+npx ts-express-starter@2
 ```
 
 Then follow the instructions

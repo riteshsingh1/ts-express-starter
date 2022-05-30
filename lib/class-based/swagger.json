@@ -1,0 +1,107 @@
+{
+   "swagger": "2.0",
+   "info": {
+     "description": "This is a sample server Petstore server.  You can find out more about     Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).      For this sample, you can use the api key `special-key` to test the authorization     filters.",
+     "version": "1.0.0",
+     "title": "Typescript Express Starter",
+     "termsOfService": "http://swagger.io/terms/",
+     "contact": {
+       "email": "hello@imritesh.com"
+     },
+     "license": {
+       "name": "Apache 2.0",
+       "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+     }
+   },
+   "host": "localhost:4000",
+   "basePath": "/v2",
+   "tags": [
+     {
+       "name": "Users",
+       "description": "api to manage users in application"
+     },
+     {
+       "name": "Auth",
+       "description": "Authentication Api's"
+     }
+   ],
+   "schemes": [
+     "https",
+     "http"
+   ],
+   "paths": {
+     "/users": {
+       "get": {
+         "tags": [
+           "Users"
+         ],
+         "summary": "Find All Users",
+         "description": "",
+         "consumes": [
+           "application/json"
+         ],
+         "produces": [
+           "application/json"
+         ],
+         "responses": {
+           "405": {
+             "description": "Invalid input"
+           },
+           "200":{
+              "description":"OK"
+           }
+         }
+       }
+     },
+     "/auth": {
+       "post": {
+         "tags": [
+           "Auth"
+         ],
+         "summary": "Create user",
+         "description": "This can only be done by the logged in user.",
+         "operationId": "createUser",
+         "produces": [
+           "application/xml",
+           "application/json"
+         ],
+         "parameters": [
+           {
+             "in": "body",
+             "name": "body",
+             "description": "Created user object",
+             "required": true,
+             "schema": {
+               "$ref": "#/definitions/User"
+             }
+           }
+         ],
+         "responses": {
+           "default": {
+             "description": "successful operation"
+           }
+         }
+       }
+     }
+   },
+   "securityDefinitions": {
+     "petstore_auth": {
+       "type": "oauth2",
+       "authorizationUrl": "http://petstore.swagger.io/oauth/dialog",
+       "flow": "implicit",
+       "scopes": {
+         "write:pets": "modify pets in your account",
+         "read:pets": "read your pets"
+       }
+     },
+     "api_key": {
+       "type": "apiKey",
+       "name": "api_key",
+       "in": "header"
+     }
+   },
+   "externalDocs": {
+     "description": "Find out more about Swagger",
+     "url": "http://swagger.io"
+   }
+ }
