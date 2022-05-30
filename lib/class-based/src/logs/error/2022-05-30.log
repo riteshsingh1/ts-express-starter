@@ -1,0 +1,264 @@
+2022-05-30 07:03:18 error: uncaughtException: Cannot find module './swagger.json'
+Require stack:
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/server.ts
+Error: Cannot find module './swagger.json'
+Require stack:
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/@cspotcode/source-map-support/source-map-support.js:679:30)
+    at Function.Module._resolveFilename (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/tsconfig-paths/src/register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts:14:25)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Module.m._compile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/ts-node/src/index.ts:1455:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+2022-05-30 07:03:30 error: uncaughtException: Cannot find module '../swagger.json'
+Require stack:
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/server.ts
+Error: Cannot find module '../swagger.json'
+Require stack:
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/@cspotcode/source-map-support/source-map-support.js:679:30)
+    at Function.Module._resolveFilename (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/tsconfig-paths/src/register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts:14:25)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Module.m._compile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/ts-node/src/index.ts:1455:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+2022-05-30 07:05:27 error: uncaughtException: Cannot find module '../swagger.json'
+Require stack:
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/server.ts
+Error: Cannot find module '../swagger.json'
+Require stack:
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/@cspotcode/source-map-support/source-map-support.js:679:30)
+    at Function.Module._resolveFilename (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/tsconfig-paths/src/register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Module.m._compile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/ts-node/src/index.ts:1455:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+2022-05-30 07:06:05 error: uncaughtException: Cannot find module '../swagger.json'
+Require stack:
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/server.ts
+Error: Cannot find module '../swagger.json'
+Require stack:
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/@cspotcode/source-map-support/source-map-support.js:679:30)
+    at Function.Module._resolveFilename (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/tsconfig-paths/src/register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Module.m._compile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/ts-node/src/index.ts:1455:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+2022-05-30 07:06:25 error: uncaughtException: Cannot find module '../swagger.json'
+Require stack:
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/server.ts
+Error: Cannot find module '../swagger.json'
+Require stack:
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/@cspotcode/source-map-support/source-map-support.js:679:30)
+    at Function.Module._resolveFilename (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/tsconfig-paths/src/register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Module.m._compile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/ts-node/src/index.ts:1455:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+2022-05-30 07:06:34 error: uncaughtException: Cannot find module '../swagger.json'
+Require stack:
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/server.ts
+Error: Cannot find module '../swagger.json'
+Require stack:
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/@cspotcode/source-map-support/source-map-support.js:679:30)
+    at Function.Module._resolveFilename (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/tsconfig-paths/src/register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Module.m._compile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/ts-node/src/index.ts:1455:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+2022-05-30 07:06:49 error: uncaughtException: Cannot find module '../swagger.json'
+Require stack:
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/server.ts
+Error: Cannot find module '../swagger.json'
+Require stack:
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/@cspotcode/source-map-support/source-map-support.js:679:30)
+    at Function.Module._resolveFilename (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/tsconfig-paths/src/register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts:14:1)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Module.m._compile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/ts-node/src/index.ts:1455:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+2022-05-30 07:07:15 error: uncaughtException: Cannot find module '../swagger.json'
+Require stack:
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/server.ts
+Error: Cannot find module '../swagger.json'
+Require stack:
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts
+- /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/@cspotcode/source-map-support/source-map-support.js:679:30)
+    at Function.Module._resolveFilename (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/tsconfig-paths/src/register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Module.m._compile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/ts-node/src/index.ts:1455:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+2022-05-30 07:12:10 error: uncaughtException: ENOENT: no such file or directory, open '../swagger.yaml'
+Error: ENOENT: no such file or directory, open '../swagger.yaml'
+    at Object.openSync (node:fs:585:3)
+    at Object.readFileSync (node:fs:453:35)
+    at Function.Utils.getStringFromFile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/yamljs/lib/Utils.js:284:19)
+    at Function.Yaml.parseFile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/yamljs/lib/Yaml.js:46:21)
+    at Function.Yaml.load (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/yamljs/lib/Yaml.js:78:17)
+    at App.initializeSwagger (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts:71:34)
+    at new App (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts:29:10)
+    at Object.<anonymous> (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/server.ts:9:13)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Module.m._compile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/ts-node/src/index.ts:1455:23)
+2022-05-30 07:12:38 error: uncaughtException: ENOENT: no such file or directory, open '../swagger.yaml'
+Error: ENOENT: no such file or directory, open '../swagger.yaml'
+    at Object.openSync (node:fs:585:3)
+    at Object.readFileSync (node:fs:453:35)
+    at Function.Utils.getStringFromFile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/yamljs/lib/Utils.js:284:19)
+    at Function.Yaml.parseFile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/yamljs/lib/Yaml.js:46:21)
+    at Function.Yaml.load (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/yamljs/lib/Yaml.js:78:17)
+    at App.initializeSwagger (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts:71:34)
+    at new App (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts:29:10)
+    at Object.<anonymous> (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/server.ts:9:13)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Module.m._compile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/ts-node/src/index.ts:1455:23)
+2022-05-30 07:13:54 error: uncaughtException: ENOENT: no such file or directory, open '../swagger.yaml'
+Error: ENOENT: no such file or directory, open '../swagger.yaml'
+    at Object.openSync (node:fs:585:3)
+    at Object.readFileSync (node:fs:453:35)
+    at Function.Utils.getStringFromFile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/yamljs/lib/Utils.js:284:19)
+    at Function.Yaml.parseFile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/yamljs/lib/Yaml.js:46:21)
+    at Function.Yaml.load (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/yamljs/lib/Yaml.js:78:17)
+    at App.initializeSwagger (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts:71:34)
+    at new App (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts:29:10)
+    at Object.<anonymous> (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/server.ts:9:13)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Module.m._compile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/ts-node/src/index.ts:1455:23)
+2022-05-30 07:14:02 error: uncaughtException: ENOENT: no such file or directory, open '../../swagger.yaml'
+Error: ENOENT: no such file or directory, open '../../swagger.yaml'
+    at Object.openSync (node:fs:585:3)
+    at Object.readFileSync (node:fs:453:35)
+    at Function.Utils.getStringFromFile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/yamljs/lib/Utils.js:284:19)
+    at Function.Yaml.parseFile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/yamljs/lib/Yaml.js:46:21)
+    at Function.Yaml.load (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/yamljs/lib/Yaml.js:78:17)
+    at App.initializeSwagger (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts:71:34)
+    at new App (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts:29:10)
+    at Object.<anonymous> (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/server.ts:9:13)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Module.m._compile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/ts-node/src/index.ts:1455:23)
+2022-05-30 07:14:13 error: uncaughtException: ENOENT: no such file or directory, open '../../swagger.yaml'
+Error: ENOENT: no such file or directory, open '../../swagger.yaml'
+    at Object.openSync (node:fs:585:3)
+    at Object.readFileSync (node:fs:453:35)
+    at Function.Utils.getStringFromFile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/yamljs/lib/Utils.js:284:19)
+    at Function.Yaml.parseFile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/yamljs/lib/Yaml.js:46:21)
+    at Function.Yaml.load (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/yamljs/lib/Yaml.js:78:17)
+    at App.initializeSwagger (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts:71:34)
+    at new App (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts:29:10)
+    at Object.<anonymous> (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/server.ts:9:13)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Module.m._compile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/ts-node/src/index.ts:1455:23)
+2022-05-30 07:15:34 error: uncaughtException: ENOENT: no such file or directory, open '../../swagger.yaml'
+Error: ENOENT: no such file or directory, open '../../swagger.yaml'
+    at Object.openSync (node:fs:585:3)
+    at Object.readFileSync (node:fs:453:35)
+    at Function.Utils.getStringFromFile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/yamljs/lib/Utils.js:284:19)
+    at Function.Yaml.parseFile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/yamljs/lib/Yaml.js:46:21)
+    at Function.Yaml.load (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/yamljs/lib/Yaml.js:78:17)
+    at App.initializeSwagger (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts:71:34)
+    at new App (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts:29:10)
+    at Object.<anonymous> (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/server.ts:9:13)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Module.m._compile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/ts-node/src/index.ts:1455:23)
+2022-05-30 07:16:22 error: uncaughtException: ENOENT: no such file or directory, open '../../swagger.yaml'
+Error: ENOENT: no such file or directory, open '../../swagger.yaml'
+    at Object.openSync (node:fs:585:3)
+    at Object.readFileSync (node:fs:453:35)
+    at Function.Utils.getStringFromFile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/yamljs/lib/Utils.js:284:19)
+    at Function.Yaml.parseFile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/yamljs/lib/Yaml.js:46:21)
+    at Function.Yaml.load (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/yamljs/lib/Yaml.js:78:17)
+    at App.initializeSwagger (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts:71:34)
+    at new App (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts:29:10)
+    at Object.<anonymous> (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/server.ts:9:13)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Module.m._compile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/ts-node/src/index.ts:1455:23)
+2022-05-30 07:16:36 error: uncaughtException: ENOENT: no such file or directory, open '../../swagger.yaml'
+Error: ENOENT: no such file or directory, open '../../swagger.yaml'
+    at Object.openSync (node:fs:585:3)
+    at Object.readFileSync (node:fs:453:35)
+    at Function.Utils.getStringFromFile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/yamljs/lib/Utils.js:284:19)
+    at Function.Yaml.parseFile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/yamljs/lib/Yaml.js:46:21)
+    at Function.Yaml.load (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/yamljs/lib/Yaml.js:78:17)
+    at App.initializeSwagger (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts:71:34)
+    at new App (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts:29:10)
+    at Object.<anonymous> (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/server.ts:9:13)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Module.m._compile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/ts-node/src/index.ts:1455:23)
+2022-05-30 07:21:30 error: uncaughtException: Router.use() requires a middleware function but got a Object
+TypeError: Router.use() requires a middleware function but got a Object
+    at Function.use (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/express/lib/router/index.js:469:13)
+    at Function.<anonymous> (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/express/lib/application.js:227:21)
+    at Array.forEach (<anonymous>)
+    at Function.use (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/express/lib/application.js:224:7)
+    at App.initializeSwagger (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts:71:14)
+    at new App (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts:29:10)
+    at Object.<anonymous> (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/server.ts:9:13)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Module.m._compile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/ts-node/src/index.ts:1455:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+2022-05-30 07:28:40 error: uncaughtException: /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/swagger.json: Unexpected token } in JSON at position 809
+SyntaxError: /Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/swagger.json: Unexpected token } in JSON at position 809
+    at parse (<anonymous>)
+    at Object.Module._extensions..json (node:internal/modules/cjs/loader:1173:22)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/src/lib/app.ts:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Module.m._compile (/Users/riteshsingh/Sites/Backend/ts-express-starter/lib/class-based/node_modules/ts-node/src/index.ts:1455:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)

@@ -5,12 +5,14 @@ import express from 'express';
 import helmet from 'helmet';
 import morgan from 'morgan';
 import { connect, set } from 'mongoose';
-import swaggerJSDoc from 'swagger-jsdoc';
+// import swaggerJSDoc from 'swagger-jsdoc';
 import swaggerUi from 'swagger-ui-express';
 import { NODE_ENV, PORT, LOG_FORMAT, ORIGIN, CREDENTIALS, MONGOOSE_URL } from '@config';
 import { Routes } from '@interfaces/routes.interface';
 import errorMiddleware from '@/http/middlewares/error.middleware';
 import { logger, stream } from '@utils/logger';
+// import YAML from 'yamljs';
+import data from '../../swagger.json';
 
 class App {
   public app: express.Application;
@@ -67,19 +69,7 @@ class App {
   }
 
   private initializeSwagger() {
-    const options = {
-      swaggerDefinition: {
-        info: {
-          title: 'REST API',
-          version: '1.0.0',
-          description: 'Example docs',
-        },
-      },
-      apis: ['swagger.yaml'],
-    };
-
-    const specs = swaggerJSDoc(options);
-    this.app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
+    this.app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(data));
   }
 
   private initializeErrorHandling() {
